@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AAKASH THAKUR ™</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: Poppins, sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #0f172a, #020617);
+            overflow-x: hidden;
+        }
+
+        /* animated background */
+
+        .bg-animation {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: .5;
+            animation: float 12s infinite linear;
+        }
+
+        .c1 {
+            width: 300px;
+            height: 300px;
+            background: #22c55e;
+            top: 10%;
+            left: 10%;
+        }
+
+        .c2 {
+            width: 250px;
+            height: 250px;
+            background: #6366f1;
+            bottom: 10%;
+            right: 10%;
+            animation-duration: 18s;
+        }
+
+        .c3 {
+            width: 200px;
+            height: 200px;
+            background: #f59e0b;
+            top: 50%;
+            left: 60%;
+            animation-duration: 20s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-40px)
+            }
+
+            100% {
+                transform: translateY(0)
+            }
+        }
+
+        /* glass card */
+
+        .glass {
+            background: rgba(255, 255, 255, .05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, .1);
+        }
+
+        /* glow button */
+
+        .glow-btn {
+            background: linear-gradient(90deg, #2563eb, #9333ea);
+            box-shadow: 0 0 20px rgba(147, 51, 234, .6);
+            transition: .3s;
+        }
+
+        .glow-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px rgba(147, 51, 234, .9);
+        }
+
+        .profile {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen p-5">
+
+    <div class="bg-animation">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+    </div>
+
+    <div class="max-w-md w-full">
+
+        <div class="glass rounded-3xl shadow-2xl overflow-hidden">
+
+            <!-- HEADER -->
+
+            <div class="text-center p-8">
+
+                <div class="profile w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-green-400 shadow-xl">
+
+                    <img src="logo.jpg" class="w-full h-full object-cover">
+
+                </div>
+
+                <h1 class="text-white text-3xl font-black mt-5">
+                    AAKASH THAKUR ™
+                </h1>
+
+                <p class="text-gray-400 text-sm mt-2">
+                    Verified Expert
+                </p>
+
+            </div>
+
+
+            <!-- STATS -->
+
+            <div class="grid grid-cols-2 gap-4 px-6 pb-6 text-center">
+
+                <div class="glass rounded-xl p-4">
+                    <div class="text-green-400 text-xl font-bold">
+                        1200+
+                    </div>
+                    <div class="text-gray-400 text-xs">
+                        Predictions
+                    </div>
+                </div>
+
+                <div class="glass rounded-xl p-4">
+                    <div class="text-yellow-400 text-xl font-bold">
+                        89%
+                    </div>
+                    <div class="text-gray-400 text-xs">
+                        Accuracy
+                    </div>
+                </div>
+
+                <div class="glass rounded-xl p-4">
+                    <div class="text-blue-400 text-xl font-bold">
+                        33K+
+                    </div>
+                    <div class="text-gray-400 text-xs">
+                        Members
+                    </div>
+                </div>
+
+                <div class="glass rounded-xl p-4">
+                    <div class="text-purple-400 text-xl font-bold">
+                        Daily
+                    </div>
+                    <div class="text-gray-400 text-xs">
+                        Updates
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- CTA -->
+
+            <div class="px-6 pb-6">
+
+                <a href="https://t.me/+S4LB3xqHccI0MjE1"
+                    class="glow-btn block text-center text-white font-bold py-4 rounded-xl">
+
+                    🚀 Join Telegram Channel
+
+                </a>
+
+            </div>
+
+
+            <!-- FEATURES -->
+
+            <div class="px-6 pb-8 space-y-3">
+
+                <div class="glass p-4 rounded-xl flex gap-3 items-center">
+
+                    <div class="text-green-400 text-xl">
+                        ✓
+                    </div>
+
+                    <div>
+                        <div class="text-white text-sm font-semibold">
+                            Expert Match Analysis
+                        </div>
+                        <div class="text-gray-400 text-xs">
+                            Deep insights
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="glass p-4 rounded-xl flex gap-3 items-center">
+
+                    <div class="text-blue-400 text-xl">
+                        📊
+                    </div>
+
+                    <div>
+                        <div class="text-white text-sm font-semibold">
+                            Daily Tips
+                        </div>
+                        <div class="text-gray-400 text-xs">
+                            Stay updated everyday
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="glass p-4 rounded-xl flex gap-3 items-center">
+
+                    <div class="text-yellow-400 text-xl">
+                        🏆
+                    </div>
+
+                    <div>
+                        <div class="text-white text-sm font-semibold">
+                            High Accuracy Picks
+                        </div>
+                        <div class="text-gray-400 text-xs">
+                            Winning strategy
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOTER -->
+
+            <div class="text-center text-gray-500 text-xs pb-5">
+
+                © 2026 AAKASH THAKUR ™
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
